@@ -87,7 +87,7 @@ class DataMaker():
                                      'X_test': self.test_path[0],
                                      'y_test': self.test_path[1]}
         self.log.info("Train and test data are ready")
-        with open('config.ini', 'w') as configfile:
+        with open(os.path.join(os.getcwd(), '..', 'config.ini'), 'w') as configfile:
             self.config.write(configfile)
         return os.path.isfile(self.train_path[0]) and\
             os.path.isfile(self.train_path[1]) and\
