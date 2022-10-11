@@ -129,5 +129,6 @@ dmypy.json
 .pyre/
 
 # Custom
-#.kaggle/
-#/data/
+*.log
+!/data/spam.csv
+/data/*
