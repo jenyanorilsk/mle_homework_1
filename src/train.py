@@ -23,7 +23,7 @@ class SpamClassifier():
         logger = Logger(SHOW_LOG)
         self.config = configparser.ConfigParser()
         self.log = logger.get_logger(__name__)
-        self.config_path = os.path.join(os.getcwd(), '..', 'config.ini')
+        self.config_path = os.path.join(os.getcwd(), 'config.ini')
         self.config.read(self.config_path)
         self.X_train = pd.read_csv(
             self.config["SPLIT_DATA"]["X_train"], index_col=0)
@@ -37,7 +37,7 @@ class SpamClassifier():
         self.y_test = pd.read_csv(
             self.config["SPLIT_DATA"]["y_test"], index_col=0)
         self.y_test = self.y_test['classname']
-        self.project_path = os.path.join(os.getcwd(), "..", "experiments")
+        self.project_path = os.path.join(os.getcwd(), "experiments")
         self.model_path = os.path.join(self.project_path, "model.sav")
         self.log.info("SpamClassifier is ready")
 
