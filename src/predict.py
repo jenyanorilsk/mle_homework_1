@@ -92,9 +92,9 @@ class Predictor():
                 with open(os.path.join(tests_path, test)) as f:
                     try:
                         data = json.load(f)
-                        X = self.sc.transform(
-                            pd.json_normalize(data, record_path=['X']))
-                        y = pd.json_normalize(data, record_path=['y'])
+                        X = [x['text'] for x in data['X']]
+                        y = [y['classname'] for y in data['y']]
+
                         score = classifier.score(X, y)
                         print(f'{args.model} has {score} score')
                     except Exception:

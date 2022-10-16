@@ -1,0 +1,24 @@
+{
+    "X": [
+        {
+            "text": "URGENT! Your mobile was awarded a Bonus Caller Prize on 27/6/03. Our final attempt 2 contact U! Call 08714714011"
+        },
+        {
+            "text": "Were somewhere on Fredericksburg"
+        },
+        {
+            "text": "Kit Strip - you have been billed 150p. Netcollex Ltd. PO Box 1013 IG11 OJA"
+        }
+    ],
+    "y": [
+        {
+            "classname": "spam"
+        },
+        {
+            "classname": "ham"
+        },
+        {
+            "classname": "spam"
+        }
+    ]
+}
