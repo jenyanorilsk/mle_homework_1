@@ -1,0 +1,4 @@
+outs:
+- md5: 74fa089b69750e0235c0dfd7e748b275
+  size: 224
+  path: exp_logfile.log
