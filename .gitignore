@@ -130,9 +130,9 @@ dmypy.json
 
 # Custom
 *.log
-!/data/spam.csv
-/data/*
+#!/data/spam.csv
+#/data/*
 
 # following folders added to dvc
-/data
-/experiments
+#/data
+#/experiments
