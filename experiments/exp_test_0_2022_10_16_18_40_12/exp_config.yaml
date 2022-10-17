@@ -1,0 +1,7 @@
+model: MODEL
+model params:
+  path: Z:\# MIPT\MLE\mle_homework_1\experiments\model.sav
+tests: func
+score: '1.0'
+X_test path: Z:\# MIPT\MLE\mle_homework_1\data\test\spam_X.csv
+y_test path: Z:\# MIPT\MLE\mle_homework_1\data\test\spam_y.csv

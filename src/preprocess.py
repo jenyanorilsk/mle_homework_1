@@ -19,7 +19,7 @@ class DataMaker():
 
         self.config = configparser.ConfigParser()
         self.log = logger.get_logger(__name__)
-        self.project_path = os.path.join(os.getcwd(), "..", "data")
+        self.project_path = os.path.join(os.getcwd(), "data")
         self.train_directory = os.path.join(self.project_path, "train")
         self.test_directory = os.path.join(self.project_path, "test")
         
@@ -87,7 +87,7 @@ class DataMaker():
                                      'X_test': self.test_path[0],
                                      'y_test': self.test_path[1]}
         self.log.info("Train and test data are ready")
-        with open(os.path.join(os.getcwd(), '..', 'config.ini'), 'w') as configfile:
+        with open(os.path.join(os.getcwd(), 'config.ini'), 'w') as configfile:
             self.config.write(configfile)
         return os.path.isfile(self.train_path[0]) and\
             os.path.isfile(self.train_path[1]) and\
