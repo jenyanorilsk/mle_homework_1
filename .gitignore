@@ -132,3 +132,7 @@ dmypy.json
 *.log
 !/data/spam.csv
 /data/*
+
+# following folders added to dvc
+/data
+/experiments
