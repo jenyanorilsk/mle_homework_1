@@ -1,6 +1,3 @@
 /config.local
 /tmp
 /cache
-# following folders added to dvc
-/data
-/experiments
