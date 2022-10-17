@@ -134,5 +134,5 @@ dmypy.json
 #/data/*
 
 # following folders added to dvc
-#/data
-#/experiments
+/data
+/experiments
