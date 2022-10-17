@@ -128,11 +128,14 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Custom
+## Custom
+
+# don't store log files
 *.log
+
 #!/data/spam.csv
 #/data/*
 
-# following folders added to dvc
-/data
-/experiments
+# following folders have to be added to dvc
+#/data
+#/experiments
